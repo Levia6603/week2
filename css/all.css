@@ -65,4 +65,90 @@ table {
 
 body {
   font-family: "Roboto", "Noto Sans TC", sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.25rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.flex {
+  display: flex;
+}
+.flex-col {
+  flex-direction: column;
+}
+.flex-rowreverse {
+  flex-direction: row-reverse;
+}
+.flex-colreverse {
+  flex-direction: column-reverse;
+}
+
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.btn {
+  display: block;
+  background-color: #AA0601;
+}
+
+.container {
+  max-width: 1360px;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+/*main scss*/
+.nav-bar {
+  padding: 16px 0;
+  font-size: 1.25rem;
+  color: #fff;
+  background-color: #AA0601;
+}
+.nav-bar img {
+  width: 80px;
+}
+
+.banner {
+  height: 787px;
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
 }/*# sourceMappingURL=all.css.map */
