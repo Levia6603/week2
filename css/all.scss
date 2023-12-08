@@ -8,30 +8,41 @@
 *,*::after,*::before{
     box-sizing: border-box;
 }
-body{
-    font-family: 'Roboto', 'Noto Sans TC', sans-serif;
-}
-h1,h2,h3,h4,h5{
+h1,h2,h3,h4,h5,p{
     line-height: 1.5;
+    font-family: 'Roboto', 'Noto Sans TC', sans-serif;
 }
 h1{
     font-size: 4rem;
+    font-weight: 700;
 }
 h2{
     font-size: 3rem;
+    font-weight: bold;
 }
 h3{
     font-size: 2.25rem;
 }
 h4{
     font-size: 2rem;
+    font-weight: 500;
 }
 h5{
     font-size: 1.5rem;
 }
+section{
+    padding: 80px 0;
+}
 a{
     text-decoration: none;
     color: #fff;
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    padding: 8px 16px;
+    color: #fff;
+    background-color: $main;
 }
 
 .flex{
@@ -61,10 +72,9 @@ a{
     &-center{
         align-items: center;
     }
-}
-.btn{
-    display: block;
-    background-color: $main;
+    &-end{
+        align-items: flex-end;
+    }
 }
 .container{
     max-width: 1360px;
@@ -82,11 +92,43 @@ a{
     img{
         width: 80px;
     }
+    li{
+        margin-left: 4rem;
+    }
 }
 .banner{
-    height: 787px;
+    padding: 0;
     background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true);
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
+    .container{
+        height: 787px;
+    }
+}
+.banner{
+    text-align: right;
+}
+.banner-text{
+    color: $main-darken;
+}
+.content{
+    padding: 80px 0;
+    text-align: center;
+    background-color: #FBF2F2;
+    img{
+        width: 83px;
+        margin-bottom: 1rem;
+    }
+    h4{
+        margin-bottom: 0.5rem;
+        color: $main-darken;
+    }
+    p{
+        text-align-last: left;
+    }
+}
+.content-text{
+    width: 306px;
+    padding: 1.5rem 0;
 }
