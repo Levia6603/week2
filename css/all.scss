@@ -48,7 +48,7 @@
         flex-wrap: wrap;
     }
 }
-.content{
+.service{
     text-align: center;
     background-color: #FBF2F2;
     img{
@@ -66,16 +66,10 @@
 .content-text{
     max-width: 306px;
     @include pad{
-        max-width: 45%;
+        max-width: 400px;
     }
 }
 .type{
-    .card{
-        @include pad{
-            flex-direction: column;
-            align-items: center;
-        }
-    }
     .content-text{
         width: 416px;
         img{
@@ -86,6 +80,12 @@
             font-style: italic;
             margin: 0;
         }
+    }
+}
+.type-content{
+    @include pad{
+        flex-direction: column;
+        align-items: center;
     }
 }
 .cobranding{
@@ -106,5 +106,38 @@
         color: $main;
         font-style: italic;
         margin: 0;
+    }
+}
+.customer-text{
+    max-width: 306px;
+    height: 511px;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 2px 5px #707070;
+    text-align: left;
+    overflow: hidden;
+    .customer-img{
+        height: 306px;
+        overflow: hidden;
+    }
+    img{
+        width: 100%;
+    }
+    @include pad{
+        max-width: 336px;
+    }
+}
+.text-area{
+    height: 205px;
+    padding: 1rem;
+    .customer-name{
+        font-weight: 500;
+    }
+    .common{
+        flex-grow: 1;
+    }
+    .date{
+        font-size: 14px;
+        color: #707070;
     }
 }

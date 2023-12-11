@@ -63,7 +63,7 @@ table {
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, p {
+h1, h2, h3, h4, h5, p, a {
   line-height: 1.5;
   font-family: "Roboto", "Noto Sans TC", sans-serif;
 }
@@ -200,19 +200,19 @@ a {
   }
 }
 
-.content {
+.service {
   text-align: center;
   background-color: #FBF2F2;
 }
-.content img {
+.service img {
   width: 83px;
   margin-bottom: 1rem;
 }
-.content h4 {
+.service h4 {
   margin-bottom: 0.5rem;
   color: #650300;
 }
-.content p {
+.service p {
   -moz-text-align-last: left;
        text-align-last: left;
 }
@@ -222,16 +222,10 @@ a {
 }
 @media (max-width: 1199px) {
   .content-text {
-    max-width: 45%;
+    max-width: 400px;
   }
 }
 
-@media (max-width: 1199px) {
-  .type .card {
-    flex-direction: column;
-    align-items: center;
-  }
-}
 .type .content-text {
   width: 416px;
 }
@@ -242,6 +236,13 @@ a {
   color: #AA0601;
   font-style: italic;
   margin: 0;
+}
+
+@media (max-width: 1199px) {
+  .type-content {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .cobranding {
@@ -264,4 +265,41 @@ a {
   color: #AA0601;
   font-style: italic;
   margin: 0;
+}
+
+.customer-text {
+  max-width: 306px;
+  height: 511px;
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 2px 5px #707070;
+  text-align: left;
+  overflow: hidden;
+}
+.customer-text .customer-img {
+  height: 306px;
+  overflow: hidden;
+}
+.customer-text img {
+  width: 100%;
+}
+@media (max-width: 1199px) {
+  .customer-text {
+    max-width: 336px;
+  }
+}
+
+.text-area {
+  height: 205px;
+  padding: 1rem;
+}
+.text-area .customer-name {
+  font-weight: 500;
+}
+.text-area .common {
+  flex-grow: 1;
+}
+.text-area .date {
+  font-size: 14px;
+  color: #707070;
 }/*# sourceMappingURL=all.css.map */
