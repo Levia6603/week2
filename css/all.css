@@ -91,23 +91,6 @@ h5 {
   font-size: 1.5rem;
 }
 
-section {
-  padding: 80px 0;
-}
-
-a {
-  text-decoration: none;
-  color: #fff;
-}
-
-.btn {
-  display: inline-block;
-  text-decoration: none;
-  padding: 8px 16px;
-  color: #fff;
-  background-color: #AA0601;
-}
-
 .flex {
   display: flex;
 }
@@ -139,9 +122,31 @@ a {
 }
 
 .container {
-  max-width: 1360px;
-  padding: 0 2rem;
+  max-width: 1320px;
+  padding: 0 1.5rem;
   margin: 0 auto;
+  overflow: hidden;
+}
+
+section {
+  padding: 80px 0;
+  text-align: center;
+}
+section h2 {
+  color: #650300;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 8px 16px;
+  color: #fff;
+  background-color: #AA0601;
 }
 
 /*main scss*/
@@ -165,6 +170,11 @@ a {
   background-repeat: no-repeat;
   overflow: hidden;
 }
+@media (max-width: 1199px) {
+  .banner {
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true);
+  }
+}
 .banner .container {
   height: 787px;
 }
@@ -177,8 +187,20 @@ a {
   color: #650300;
 }
 
+.container h2 {
+  margin: 3rem 0;
+}
+
+.card {
+  gap: 1.5rem;
+}
+@media (max-width: 1199px) {
+  .card {
+    flex-wrap: wrap;
+  }
+}
+
 .content {
-  padding: 80px 0;
   text-align: center;
   background-color: #FBF2F2;
 }
@@ -196,6 +218,50 @@ a {
 }
 
 .content-text {
-  width: 306px;
-  padding: 1.5rem 0;
+  max-width: 306px;
+}
+@media (max-width: 1199px) {
+  .content-text {
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 1199px) {
+  .type .card {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.type .content-text {
+  width: 416px;
+}
+.type .content-text img {
+  width: 100%;
+}
+.type .content-text h2 {
+  color: #AA0601;
+  font-style: italic;
+  margin: 0;
+}
+
+.cobranding {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.cobranding h2 {
+  color: #fff;
+}
+
+.co-text {
+  max-width: 648px;
+  background-color: #fff;
+}
+.co-text img {
+  width: 100%;
+}
+.co-text h2 {
+  color: #AA0601;
+  font-style: italic;
+  margin: 0;
 }/*# sourceMappingURL=all.css.map */
